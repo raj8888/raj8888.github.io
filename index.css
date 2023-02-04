@@ -1,4 +1,7 @@
-
+body{
+    background: rgb(170,170,170);
+background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.8884803921568627) 18%, rgba(27,27,27,0.7820378151260504) 59%);
+}
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +32,25 @@ li{
     color: #fff;
     text-shadow: 3px -1px 3px rgba(230, 230, 223, 0.38);
 }
+#nav-down-res {
+    background-color: rgb(62, 60, 60);
+    border: none;
+    font-size: 20px;
     
+}  
+#nav-down-res a{
+    color: orangered;
+}
+
+#nav-down-res:hover{
+    background-color: rgb(129, 128, 128);
+    border-radius: 4px;
+    transition: 0.2s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.41);
+}
+#nav-down-res:hover a{
+    background-color: rgb(129, 128, 128);
+}
     /* LOGO */
     
 .logo {
@@ -90,7 +111,12 @@ display: none;
     text-align: center;
     padding: 16px 0;
 }
-    
+    #nav-down-res{
+    background-color: rgb(62, 60, 60);
+}
+#nav-down-res a{
+    background-color:rgb(104, 104, 104);
+}
 .menu li:hover {
     display: inline-block;
     background-color:#4d4d4d;
@@ -120,7 +146,76 @@ input[type=checkbox]:checked ~ .menu{
     background-color: #4d4d4d;
     }
 }
+/* .home-div{
+    background: rgb(170,170,170);
+background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.8884803921568627) 18%, rgba(27,27,27,0.7820378151260504) 59%);
 
+} */
 #home{
-    margin-top: 100px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 79px;
+    justify-content: space-between;
+
+} 
+
+.home-img{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.home-img img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.home-intro{
+    width: 69%;
+    color: white;
+}
+.home-name-intro{
+    margin-top: 15%;
+}
+.home-name-intro h1{
+    display: inline;
+}
+.typewrite{
+    color: orangered;
+}
+#user-detail-intro{
+    margin-top: 20px;
+}
+@media(min-width: 20px) and (max-width: 1000px) {
+    #home{
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    .home-intro{
+        width: 95%;
+    }
+    .home-name-intro{
+        margin-top: 5%;
+        text-align: center;
+    }
+    #user-detail-intro{
+        text-align: center;
+    }
+    .home-img{
+        width: 50%;
+    }
+    .home-img img{
+        width: 100%;
+    }
+  
+    
+}
+@media(min-width: 20px) and (max-width: 790px){
+  .home-name-intro h1{
+        display: block;
+    }
 } 

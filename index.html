@@ -28,45 +28,50 @@
           <li><a href="#skills" class="nav-link skills">Skills</a></li>
           <li><a href="#projects" class="nav-link projects">Projects</a></li>
           <li><a href="#contact" class="nav-link contact">Contact</a></li>
-          <li><a href="" class="nav-link resume">My Resume</a></li>
+          <li><button onclick="NewTab()" id="nav-down-res"><a href="./downloads/Rajvardhan_Jadhav_Resume.pdf" download class="nav-link resume" >My Resume</a></button></li>
         </div>
       </ul>
     </nav>
 
-    <section id="home">
-      <h1>HOME DATA ADD HERE</h1>
-      <img
-        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-        alt=""
-      />
-    </section>
+    <div class="home-div">
+      <section id="home">
+        <!-- HOME DATA -->
+        <div class="home-img">
+          <img src="./jadhav raj.jpg" alt="">
+        </div>
+        <div class="home-intro">
+          <div class="home-name-intro">
+          <h1 id="user-detail-name">Hi👋, I'm Rajvardhan and  </h1>
+          <h1>I'm
+            <a href="" class="typewrite" data-period="2000" data-type='[ "Full-Stack Web Developer.", "NodeJS Developer.", "Coder.", "Problem Solver." ]'>
+              <span class="wrap"></span>
+            </a>
+          </h1>
+          </div>
+          <p  id="user-detail-intro">A passionate Full-Stack Web Developer, Dedicated to developing robust applications. Problem-solving mindset with a goal to optimize my application for better stability and speed. </p>
+          <button id="down-resume" onclick="NewTab()"><a href="./downloads/Rajvardhan_Jadhav_Resume.pdf" download>My Resume</a></button>
+        </div>
+  
+      </section>
+    </div>
     <section id="about" class="about section">
       <h1>ABOUT DATA ADD HERE</h1>
-      <img
-        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-        alt=""
-      />
     </section>
     <section id="skills">
       <h1>SKILLS DATA ADD HERE</h1>
-      <img
-        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-        alt=""
-      />
     </section>
     <section id="projects">
       <h1>PROJECTS DATA ADD HERE</h1>
-      <img
-        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-        alt=""
-      />
     </section>
     <section id="contact">
       <h1>CONTACT DATA ADD HERE</h1>
-      <img
-        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-        alt=""
-      />
     </section>
   </body>
+  <script>
+    function NewTab() {
+            window.open(
+            "./downloads/Rajvardhan_Jadhav_Resume.pdf", "_blank");
+        }
+  </script>
+  <script src="./index.js"></script>
 </html>

@@ -160,7 +160,7 @@ background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.88848
 
 } 
 
-.home-img{
+#home-img{
     width: 30%;
     text-align: center;
     display: flex;
@@ -168,7 +168,7 @@ background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.88848
     justify-content: center;
     padding: 10px;
 }
-.home-img img{
+#home-img img{
     border-radius: 50%;
     width: 100%;
 }
@@ -205,10 +205,10 @@ background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.88848
     #user-detail-intro{
         text-align: center;
     }
-    .home-img{
+    #home-img{
         width: 50%;
     }
-    .home-img img{
+    #home-img img{
         width: 100%;
     }
   

@@ -189,6 +189,28 @@ background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.88848
 #user-detail-intro{
     margin-top: 20px;
 }
+#about-me-about{
+    margin-top: 2%;
+    text-decoration: underline;
+}
+
+#resume-button-2{
+    text-align: center;
+    margin-top: 2%;
+    padding: 10px;
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-size: 15px;
+    /* font-weight: bolder; */
+    border-radius: 4px;
+}
+#resume-button-2:hover{
+cursor: pointer;
+background-color: rgb(255, 99, 42);
+color: rgb(203, 203, 203);
+}
+
 @media(min-width: 20px) and (max-width: 1000px) {
     #home{
         flex-direction: column;
@@ -211,11 +233,21 @@ background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.88848
     #home-img img{
         width: 100%;
     }
-  
+    #about-me-about{
+        text-align: center;
+    }
+    #resume-link-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
 }
 @media(min-width: 20px) and (max-width: 790px){
   .home-name-intro h1{
         display: block;
+    }
+    #about-me-about{
+        text-align: center;
     }
 } 

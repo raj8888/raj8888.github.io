@@ -32,23 +32,23 @@ li{
     color: #fff;
     text-shadow: 3px -1px 3px rgba(230, 230, 223, 0.38);
 }
-#resume-button-1 {
+#resume-link-1 button{
     background-color: rgb(62, 60, 60);
     border: none;
     font-size: 20px;
     
 }  
-#resume-button-1 a{
+#resume-link-1 button{
     color: orangered;
 }
 
-#resume-button-1:hover{
+#resume-button-1 button:hover{
     background-color: rgb(129, 128, 128);
     border-radius: 4px;
     transition: 0.2s ease;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.41);
 }
-#resume-button-1:hover a{
+#resume-button-1:hover {
     background-color: rgb(129, 128, 128);
 }
     /* LOGO */
@@ -111,10 +111,10 @@ display: none;
     text-align: center;
     padding: 16px 0;
 }
-    #resume-button-1{
+    #resume-link-1{
     background-color: rgb(62, 60, 60);
 }
-#resume-button-1 a{
+#resume-link-1 button{
     background-color:rgb(104, 104, 104);
 }
 .menu li:hover {

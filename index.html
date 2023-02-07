@@ -28,10 +28,7 @@
           <li><a href="#projects" class="nav-link projects">Projects</a></li>
           <li><a href="#contact" class="nav-link contact">Contact</a></li>
           <li class="nav-link resume">
-            <div id="resume-button-1">
-              <a id="resume-link-1" href="./downloads/Rajvardhan_Jadhav_Resume.pdf" onclick="NewTab()" download>My Resume
-              </a>
-            </div>
+            <a id="resume-link-1" href="./downloads/Rajvardhan_Jadhav_Resume.pdf" target="_blank" download><button id="resume-button-1"  onclick="NewTab1()">My Resume</button></a>
           </li>
         </div>
       </ul>
@@ -57,7 +54,7 @@
           <section id="about" class="about section">
            <h1 id="about-me-about">About Me:</h1>
            <p  id="user-detail-intro">A passionate Full-Stack Web Developer, Dedicated to developing robust applications with knowledge of JavaScript,NodeJS,HTML and CSS. Problem-solving mindset with a goal to optimize my application for better stability and speed.</p>
-           <a id="resume-link-2" href="./downloads/Rajvardhan_Jadhav_Resume.pdf" target="_blank" download><button id="resume-button-2"  onclick="NewTab()">My Resume</button></a>
+           <a id="resume-link-2" href="./downloads/Rajvardhan_Jadhav_Resume.pdf" target="_blank" download><button id="resume-button-2"  onclick="NewTab2()">My Resume</button></a>
           </section>
           
         </div>
@@ -75,7 +72,11 @@
     </section>
   </body>
   <script>
-    function NewTab() {
+    function NewTab1() {
+             window.open(
+            "./downloads/Rajvardhan_Jadhav_Resume.pdf", "_blank");
+        }
+        function NewTab2() {
              window.open(
             "./downloads/Rajvardhan_Jadhav_Resume.pdf", "_blank");
         }

@@ -357,3 +357,17 @@ font-weight: 500;
     100% { transform: rotate(-3deg); }
 }
 
+#contact{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+#contact-div img , #contact-phone-logo{
+    width: 30px;
+}
+#cell-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "github-calendar": "^2.3.2"
-  }
+  },
+  "name": "github-portfolio",
+  "description": "## Maximum Marks - 34",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raj8888/raj8888.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raj8888/raj8888.github.io/issues"
+  },
+  "homepage": "https://github.com/raj8888/raj8888.github.io#readme"
 }

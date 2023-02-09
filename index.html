@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<!-- <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/> -->
+
   </head>
   <body>
     <nav id="nav-menu" class="navbar">
@@ -104,8 +109,39 @@
       </section>
       <section id="projects">
         <h1>PROJECTS DATA ADD HERE</h1>
-        <!-- <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""> -->
       </section>
+
+
+      <section id="github-section">
+        <picture  id="github-streak-stats">
+          <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=raj8888&theme=black-ice" />
+          <img src="https://streak-stats.demolab.com?user=DenverCoder1&theme=default" />
+      </picture>
+
+      <picture id="github-top-langs">
+        <source 
+          srcset="https://github-readme-stats.vercel.app/api?username=raj8888&show_icons=true&theme=dark"
+          media="(prefers-color-scheme: dark)"
+        />
+        <source
+          srcset="https://github-readme-stats.vercel.app/api?username=raj8888&show_icons=true"
+          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+        />
+        <img src="https://github-readme-stats.vercel.app/api?username=raj8888&show_icons=true" />
+        </picture>
+
+        <picture  id="github-stats-card">
+          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=raj8888&layout=compact&theme=dark" />
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raj8888&layout=compact" />
+        </picture>
+        <div class="react-activity-calendar">
+          <!-- Loading stuff -->
+          Loading the data just for you.
+      </div>
+
+      </section>
+
+
       <section id="contact">
         
           <h1>Contact Me</h1>
@@ -137,7 +173,22 @@
              window.open(
             "./downloads/Rajvardhan_Jadhav_Resume.pdf", "_blank");
         }
-        
   </script>
+  <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+  GitHubCalendar(".react-activity-calendar", "raj8888");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".react-activity-calendar", "raj8888", { responsive: true });
+
+  // Use a proxy
+  GitHubCalendar(".react-activity-calendar", "raj8888", {
+     proxy (raj8888) {
+       return fetch(`https://your-proxy.com/github?user=${raj8888}`)
+     }
+  }).then(r => r.text())
+</script>
   <script src="./index.js"></script>
 </html>

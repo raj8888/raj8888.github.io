@@ -113,27 +113,36 @@
 
 
       <section id="github-section">
-        <picture >
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=raj8888&theme=black-ice" />
-          <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=raj8888&theme=black-ice" />
-      </picture>
-
-      <picture >
-        <source 
-          srcset="https://github-readme-stats.vercel.app/api?username=raj8888&show_icons=true&theme=dark"
-          media="(prefers-color-scheme: dark)"
-        />
-        <source
-          srcset="https://github-readme-stats.vercel.app/api?username=raj8888&show_icons=true"
-          media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-        />
-        <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=raj8888&show_icons=true" />
-        </picture>
-
-        <picture >
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=raj8888&layout=compact&theme=dark" />
-          <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=raj8888&layout=compact" />
-        </picture>
+        <h1 id="git-hub-stats-title">GitHub Stats</h1>
+        <div id="git-main-stat-div">
+          <div id="git-strek-div">
+            <picture >
+              <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=raj8888&theme=black-ice" />
+              <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=raj8888&theme=black-ice" />
+          </picture>
+          </div>
+  
+        <div id="git-stats-div">
+          <picture >
+            <source 
+              srcset="https://github-readme-stats.vercel.app/api?username=raj8888&show_icons=true&theme=dark"
+              media="(prefers-color-scheme: dark)"
+            />
+            <source
+              srcset="https://github-readme-stats.vercel.app/api?username=raj8888&show_icons=true"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+            />
+            <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=raj8888&show_icons=true" />
+            </picture>
+        </div>
+  
+          <div id="git-code-stat">
+            <picture >
+              <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=raj8888&layout=compact&theme=dark" />
+              <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=raj8888&layout=compact" />
+            </picture>
+          </div>
+        </div>
         <div class="react-activity-calendar">
           <!-- Loading stuff -->
           Loading the data just for you.
@@ -190,5 +199,6 @@
      }
   })
 </script>
+
   <script src="./index.js"></script>
 </html>

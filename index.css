@@ -207,7 +207,7 @@ input[type=checkbox]:checked ~ .menu{
     border-radius: 5px;
 }
 #about{
-    padding-top: 150px;
+    padding-top: 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -322,9 +322,8 @@ color: rgb(203, 203, 203);
   } 
 
   #skills{
-    margin-top: 5%;
-    padding-top: 20px;
-    
+    margin-top: 10%;
+    padding-top: 10%;   
   }
 #my-skills-sec{
     text-align: center;
@@ -360,7 +359,6 @@ color: rgb(203, 203, 203);
     background-color: rgb(143, 142, 142);
     border-radius: 10px;
     height: 70%;
-    
 }
 .skills-card img {
     border: 5px solid #f8f8f8;
@@ -438,6 +436,7 @@ font-weight: 500;
     text-align: center;
     width: 95%;
     margin: auto;
+    margin-top: 3%;
 }
 
 .contact-info img {
@@ -457,27 +456,46 @@ font-weight: 500;
 }
 
 #git-main-stat-div{
-    display: flex;
+    display: grid;
     width: 90%;
     margin: auto;
     margin-top: 2%;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center;
+    justify-content: space-between; */
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 2%;
 }
 
 #git-main-stat-div div{
-    width: 30%;
+    width: 95%;
 }
 #git-main-stat-div div img{
     width: 100%;
 }
 
+@media(min-width: 100px) and (max-width:800px) {
+    #git-main-stat-div{
+        width: 50%;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: repeat(1,1fr);
+    }
+
+    #git-hub-stats-title , #my-skills-sec #about-me-about{
+        font-size: 30px;
+    }
+    #git-hub-stats-title {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
 :root {
-    --color-calendar-graph-day-bg: #dddbdb;
-    --color-calendar-graph-day-L1-bg: #39dd34;
-    --color-calendar-graph-day-L2-bg: #45a045;
-    --color-calendar-graph-day-L3-bg: #047526;
-    --color-calendar-graph-day-L4-bg: #0a4208;
+    --color-calendar-graph-day-bg: #d1d1d1;
+    --color-calendar-graph-day-L1-bg: #ffae42  ;
+    --color-calendar-graph-day-L2-bg: #f9b028;
+    --color-calendar-graph-day-L3-bg: #ff7518;
+    --color-calendar-graph-day-L4-bg: #fb4f14;
   }
   
   rect.ContributionCalendar-day[data-level='0'] {
@@ -515,14 +533,14 @@ font-weight: 500;
     /* flex-wrap: wrap; */
 }
 .js-calendar-graph-svg{
-width: 80%;
+width: 90%;
 margin: auto;
-overflow-x:scroll;
+/* overflow-x:scroll; */
 /* float: left; */
 
 }
 .js-calendar-graph-svg g{
-    width: 80%;
+    width: 100%;
     /* float: left; */
     position: fixed;
 }
@@ -689,5 +707,14 @@ display: none
     .contrib-number {
         font-weight: 50;
         font-size: 10px;
+    }
+}
+
+@media(min-width: 100px) and (max-width:800px){
+    .react-activity-calendar {
+        width: 99%;
+    }
+    .js-calendar-graph-svg {
+        width: 100%;
     }
 }

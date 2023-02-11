@@ -229,6 +229,13 @@ input[type=checkbox]:checked ~ .menu{
     right: 0;
     /* height: 10%; */
 }
+#user-detail-intro{
+    font-size: 20px;
+    line-height: 30px;
+    word-spacing: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+}
 @media(min-width: 20px) and (max-width: 800px) {
     #about{
         width: 90%;
@@ -247,6 +254,15 @@ input[type=checkbox]:checked ~ .menu{
     }
     #about img{
         width: 50%;
+    }
+    #home-img{
+        margin-right: 0px;
+    }
+    #user-detail-intro{
+        font-size: 17px;
+        line-height: 20px;
+        word-spacing: 3px;
+       
     }
 }
 #resume-button-2{
@@ -322,7 +338,7 @@ color: rgb(203, 203, 203);
   } 
 
   #skills{
-    margin-top: 10%;
+    margin-top: 5%;
     padding-top: 10%;   
   }
 #my-skills-sec{
@@ -436,7 +452,7 @@ font-weight: 500;
     text-align: center;
     width: 95%;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .contact-info img {
@@ -473,15 +489,15 @@ font-weight: 500;
     width: 100%;
 }
 
-@media(min-width: 100px) and (max-width:800px) {
+@media(min-width: 500px) and (max-width:800px) {
     #git-main-stat-div{
-        width: 50%;
+    width: 50%;
     margin: auto;
     text-align: center;
     grid-template-columns: repeat(1,1fr);
     }
 
-    #git-hub-stats-title , #my-skills-sec #about-me-about{
+    #git-hub-stats-title , #my-skills-sec, #about-me-about{
         font-size: 30px;
     }
     #git-hub-stats-title {
@@ -489,13 +505,21 @@ font-weight: 500;
         margin-bottom: 30px;
     }
 }
+@media(min-width: 10px) and (max-width:499px) {
+    #git-main-stat-div{
+    width: 70%;
+    grid-template-columns: repeat(1,1fr);
+    margin: auto;
+    text-align: center;
+    }
+}
 
 :root {
     --color-calendar-graph-day-bg: #d1d1d1;
-    --color-calendar-graph-day-L1-bg: #ffae42  ;
-    --color-calendar-graph-day-L2-bg: #f9b028;
-    --color-calendar-graph-day-L3-bg: #ff7518;
-    --color-calendar-graph-day-L4-bg: #fb4f14;
+    --color-calendar-graph-day-L1-bg: #ffc983  ;
+    --color-calendar-graph-day-L2-bg: #fdbd46;
+    --color-calendar-graph-day-L3-bg: #fe8331;
+    --color-calendar-graph-day-L4-bg: #f7521c;
   }
   
   rect.ContributionCalendar-day[data-level='0'] {
@@ -719,34 +743,142 @@ display: none
     }
 }
 
+#projects{
+margin-bottom: 5%;
+padding-top: 7%;
+}
+
+#project-sec-title{
+    text-align: center;
+    font-size:40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
 #all-projects{
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    row-gap: 50px;
 }
-#all-projects div{
+
+@media(min-width: 100px) and (max-width:1100px){
+    #all-projects{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+#all-projects .project-card{
     width: 90%;
     margin: auto;
+    /* background-color: red; */
+background-color: rgb(201, 199, 199);
+border-radius: 5px;
+padding: 15px;
+height: 100%;
+}
+#all-projects .project-card:hover{
+    cursor: pointer;
+    background-color: rgb(216, 215, 215);
 }
 .project-card img{
 width: 100%;
 border-radius: 5px;
+margin-bottom: 5%;
 }
 .project-tech-stack{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
+    display: grid;
+    /* align-items: center; */
+    /* justify-content:space-between; */
+    grid-template-columns: repeat(7,1fr);
+    
+}
+@media(min-width: 0px) and (max-width:649px){
+    .project-tech-stack{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        row-gap: 10px;
+    }
+    #project-sec-title,#my-skills-sec,#git-hub-stats-title,#about-me-about{
+        font-size: 25px;
+        background-color: rgb(250, 120, 28);
+        margin: 20px 10%;
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+    }
+    .project-title{
+        font-size: 5px;
+    }
+    #about-me-about{
+        margin: 20px 0%;
+    }
 }
 .project-tech-stack div{
     width: 13%;
 }
-.project-tech-stack p{
-    font-size: 10px;
-    text-align: center;
-}
+
 .project-tech-stack img{
     text-align: center;
     width: 50px;
     height: 50px;
+}
+.project-title{
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 115, 0);
+}
+.project-description{
+    margin-bottom: 10%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#projects-links{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#projects-links button{
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: rgb(255, 127, 29);
+    border: none;
+    border-radius: 8px;
+}
+#projects-links button a{
+    background-color: transparent;
+}
+
+#projects-links button:hover{
+    cursor: pointer;
+    background-color: rgb(249, 86, 27);
+}
+#projects-links button a{
+    text-decoration: none;
+    color: white;
+}
+#projects-links button:hover a{
+    color: rgb(241, 240, 240);
+   
+}
+#project-sec-title,#my-skills-sec,#git-hub-stats-title,#about-me-about{
+    background: rgb(251,99,23);
+    background: linear-gradient(90deg, rgba(31, 23, 251, 0.869) 12%, rgba(228, 150, 235, 0.863) 50%, rgb(249, 67, 155) 90%);
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+        margin-left: 5%;
+        margin-right: 5%;
+}
+#about-me-about{
+    margin-left: 0;
+    margin-right: 0;
+}
+ 
+#about-sec-div button ,#projects button{
+    background: linear-gradient(90deg, rgba(77, 71, 249, 0.869) 12%, rgba(240, 108, 252, 0.863) 50%, rgb(252, 95, 171) 90%);
 }

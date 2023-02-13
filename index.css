@@ -147,10 +147,10 @@ input[type=checkbox]:checked ~ .menu{
     cursor: pointer;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.41);
 }
-.menu:last-child {
+.menu li:last-child {
     background-color: rgb(50, 53, 52);
 }
-.menu:last-child :hover {
+.menu li:last-child :hover button{
     cursor: pointer;
     /* background-color: rgb(129, 128, 128); */
     background-color: rgb(50, 53, 52);

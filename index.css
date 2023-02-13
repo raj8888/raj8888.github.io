@@ -1,6 +1,8 @@
 body{
-    background: rgb(170,170,170);
-background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.8884803921568627) 18%, rgba(27,27,27,0.7820378151260504) 59%);
+    /* background: rgb(170,170,170);
+background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.8884803921568627) 18%, rgba(27,27,27,0.7820378151260504) 59%); */
+background: rgb(164,196,231);
+background: linear-gradient(90deg, rgba(164,196,231,0.7148109243697479) 12%, rgba(193,237,251,0.9697128851540616) 45%, rgba(251,23,47,0.4515056022408963) 94%);
 }
 * {
     margin: 0;
@@ -21,7 +23,7 @@ li{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: rgb(62, 60, 60);
+    background-color: rgb(50, 53, 52);
     color: #fff;
     position: fixed;
     width: 100%;
@@ -32,25 +34,7 @@ li{
     color: #fff;
     text-shadow: 3px -1px 3px rgba(230, 230, 223, 0.38);
 }
-#resume-link-1 button{
-    background-color: rgb(62, 60, 60);
-    border: none;
-    font-size: 20px;
-    
-}  
-#resume-link-1 button{
-    color: orangered;
-}
 
-#resume-button-1 button:hover{
-    background-color: rgb(129, 128, 128);
-    border-radius: 4px;
-    transition: 0.2s ease;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.41);
-}
-#resume-button-1:hover {
-    background-color: rgb(129, 128, 128);
-}
     /* LOGO */
     
 .logo {
@@ -111,12 +95,12 @@ display: none;
     text-align: center;
     padding: 16px 0;
 }
-    #resume-link-1{
+/* #resume-link-1{
     background-color: rgb(62, 60, 60);
 }
 #resume-link-1 button{
     background-color:rgb(104, 104, 104);
-}
+} */
 .menu li:hover {
     display: inline-block;
     background-color:#4d4d4d;
@@ -145,6 +129,31 @@ input[type=checkbox]:checked ~ .menu{
 .dropdown li:hover {
     background-color: #4d4d4d;
     }
+}
+
+#resume-link-1 button{
+    background-color: rgb(50, 53, 52);
+    padding: 3px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    color:orangered
+}  
+
+#resume-button-1 button:hover{
+    background-color: rgb(50, 53, 52);
+    border-radius: 4px;
+    /* transition: 0.2s ease; */
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.41);
+}
+.menu:last-child {
+    background-color: rgb(50, 53, 52);
+}
+.menu:last-child :hover {
+    cursor: pointer;
+    /* background-color: rgb(129, 128, 128); */
+    background-color: rgb(50, 53, 52);
 }
 /* .home-div{
     background: rgb(92,232,195);
@@ -195,7 +204,7 @@ input[type=checkbox]:checked ~ .menu{
 }
 #user-detail-intro{
     margin-top: 20px;
-    color: white;
+    color: rgb(62, 62, 62);
 }
 
 #about-me-about{
@@ -372,7 +381,7 @@ color: rgb(203, 203, 203);
     transform-origin: center -20px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     text-align: center;
-    background-color: rgb(143, 142, 142);
+    background-color: rgb(245, 67, 67);
     border-radius: 10px;
     height: 70%;
 }
@@ -497,7 +506,7 @@ font-weight: 500;
     grid-template-columns: repeat(1,1fr);
     }
 
-    #git-hub-stats-title , #my-skills-sec, #about-me-about{
+    #git-hub-stats-title , #my-skills-sec, #about-me-about,#project-sec-title{
         font-size: 30px;
     }
     #git-hub-stats-title {
@@ -515,11 +524,11 @@ font-weight: 500;
 }
 
 :root {
-    --color-calendar-graph-day-bg: #d1d1d1;
-    --color-calendar-graph-day-L1-bg: #ffc983  ;
-    --color-calendar-graph-day-L2-bg: #fdbd46;
-    --color-calendar-graph-day-L3-bg: #fe8331;
-    --color-calendar-graph-day-L4-bg: #f7521c;
+    --color-calendar-graph-day-bg: #b2b2b2;
+    --color-calendar-graph-day-L1-bg: #8bbff8  ;
+    --color-calendar-graph-day-L2-bg: #576fe7;
+    --color-calendar-graph-day-L3-bg: #205ae3;
+    --color-calendar-graph-day-L4-bg: #440fbe;
   }
   
   rect.ContributionCalendar-day[data-level='0'] {
@@ -555,6 +564,9 @@ font-weight: 500;
     margin: auto;
     width: 90%;
     /* flex-wrap: wrap; */
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,0.8016456582633054) 0%, rgba(252,70,233,1) 100%);
+    border-radius: 10px;
 }
 .js-calendar-graph-svg{
 width: 90%;
@@ -772,14 +784,17 @@ padding-top: 7%;
     width: 90%;
     margin: auto;
     /* background-color: red; */
-background-color: rgb(201, 199, 199);
+background-color: rgb(255, 199, 199);
 border-radius: 5px;
 padding: 15px;
 height: 100%;
 }
 #all-projects .project-card:hover{
     cursor: pointer;
-    background-color: rgb(216, 215, 215);
+    background-color: rgb(247, 62, 62);
+}
+.project-card:hover .project-title{
+    color: white;
 }
 .project-card img{
 width: 100%;

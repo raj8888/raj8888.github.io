@@ -54,3 +54,7 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+document.getElementById('resume-link-2',addEventListener('click',()=>{
+    window.location.assign("https://drive.google.com/file/d/1B5soRMn7Q4wVzXpnbz3P4VbqDkI-hd_Z/view?usp=share_link","_blank")
+}))

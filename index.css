@@ -496,8 +496,13 @@ font-weight: 500;
 }
 #git-main-stat-div div img{
     width: 100%;
+    height: 70%;
 }
 
+#git-code-stat img{
+    width: 100%;
+    height: 170px;
+}
 @media(min-width: 500px) and (max-width:800px) {
     #git-main-stat-div{
     width: 50%;

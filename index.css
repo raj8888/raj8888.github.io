@@ -1,8 +1,4 @@
 body{
-    /* background: rgb(170,170,170);
-background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(99,99,99,0.8884803921568627) 18%, rgba(27,27,27,0.7820378151260504) 59%); */
-/* background: rgb(164,196,231);
-background: linear-gradient(90deg, rgba(164,196,231,0.7148109243697479) 12%, rgba(193,237,251,0.9697128851540616) 45%, rgba(251,23,47,0.4515056022408963) 94%); */
 background-color: rgb(246, 246, 246);
 }
 * {
@@ -799,7 +795,6 @@ padding-top: 7%;
 #all-projects .project-card{
     width: 90%;
     margin: auto;
-    /* background-color: red; */
 background-color: rgb(208, 208, 208);
 border-radius: 5px;
 padding: 15px;
@@ -820,8 +815,6 @@ margin-bottom: 5%;
 }
 .project-tech-stack{
     display: grid;
-    /* align-items: center; */
-    /* justify-content:space-between; */
     grid-template-columns: repeat(7,1fr);
     
 }
@@ -834,7 +827,6 @@ margin-bottom: 5%;
     }
     #project-sec-title,#my-skills-sec,#git-hub-stats-title,#about-me-about{
         font-size: 25px;
-        /* background-color: rgb(250, 120, 28); */
         margin: 20px 10%;
         padding: 10px;
         text-align: center;
@@ -878,7 +870,6 @@ margin-bottom: 5%;
 #projects-links button{
     padding: 10px 20px;
     font-size: 15px;
-    /* background-color: rgb(255, 127, 29); */
     border: none;
     border-radius: 8px;
 }
@@ -888,7 +879,6 @@ margin-bottom: 5%;
 
 #projects-links button:hover{
     cursor: pointer;
-    /* background-color: rgb(249, 86, 27); */
 }
 #projects-links button a{
     text-decoration: none;
@@ -899,8 +889,7 @@ margin-bottom: 5%;
    
 }
 #project-sec-title,#my-skills-sec,#git-hub-stats-title,#about-me-about{
-    /* background: rgb(251,99,23); */
-    /* background: linear-gradient(90deg, rgba(31, 23, 251, 0.869) 12%, rgba(228, 150, 235, 0.863) 50%, rgb(249, 67, 155) 90%); */
+
         padding: 10px;
         text-align: left;
         border-radius: 8px;
